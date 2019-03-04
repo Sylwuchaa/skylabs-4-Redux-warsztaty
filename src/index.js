@@ -21,3 +21,8 @@ document.getElementById('root')
 );
 store.dispatch(addComment("The first comment!"));
 store.dispatch(addComment("The second comment!"));
+store.dispatch(addComment("The first comment!"));
+store.dispatch(addComment("The second comment!"));
+store.dispatch(addComment("The first comment!"));
+store.dispatch(addComment("The second comment!"));
+

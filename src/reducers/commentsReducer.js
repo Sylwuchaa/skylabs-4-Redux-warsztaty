@@ -27,12 +27,12 @@ import { ADD_COMMENT, REMOVE_COMMENT, EDIT_COMMENT, VOTE_UP_COMMENT, VOTE_DOWN_C
     case VOTE_UP_COMMENT:
       return {
         ...state,
-        comments: state.comments.map(comment => comment.id === action.payload.id ? {...comment, vote: comment.votes + 1 } : comment)
+        comments: state.comments.map(comment => comment.id === action.payload.id ? {...comment, votes: comment.votes + 1 } : comment)
       }
       case VOTE_DOWN_COMMENT:
       return {
         ...state,
-        comments: state.comments.map(comment => comment.id === action.payload.id ? {...comment, vote: comment.votes - 1 } : comment)
+        comments: state.comments.map(comment => comment.id === action.payload.id ? {...comment, votes: comment.votes - 1 } : comment)
       }
     default:
       return state;

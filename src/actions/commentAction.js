@@ -27,20 +27,19 @@ export const editComment = ({ id, text }) => ({
 });
 
 export const VOTE_UP_COMMENT = "VOTE_UP_COMMENT";
-export const voteUpComment = (id, vote) => ({
+export const voteUpComment = (id) => ({
   type: VOTE_UP_COMMENT,
   payload: {
-    id,
-    vote
+    id
+
   }
 });
 
 export const VOTE_DOWN_COMMENT = "VOTE_DOWN_COMMENT";
-export const voteDownComment = (id, vote) => ({
+export const voteDownComment = (id) => ({
   type: VOTE_DOWN_COMMENT,
   payload: {
-    id,
-    vote
+    id
   }
 });
 
