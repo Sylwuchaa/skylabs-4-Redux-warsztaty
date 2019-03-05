@@ -2,7 +2,7 @@ import React from "react";
 import { connect } from "react-redux";
 
 import { voteUpComment, voteDownComment, removeComment } from "../actions/commentAction";
-const CommentRaw = ({ text, votes, id, voteUpComment }) => (
+const CommentRaw = ({ text, votes, id, voteUpComment, voteDownComment, removeComment }) => (
   <li>
     {text} <span>votes: {votes}</span>
     <button onClick={() => voteUpComment(id)}>Vote Up</button>
